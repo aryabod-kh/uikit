@@ -5,6 +5,7 @@ import Button from './components/Button/Button.svelte';
 import Checkbox from './components/Checkbox/Checkbox.svelte';
 import DatePicker from './components/DatePicker/DatePicker.svelte';
 import Dialog from './components/Dialog/Dialog.svelte';
+import Divider from './components/Divider/Divider.svelte';
 import Loading from './components/Loading/Loading.svelte';
 import Pagination from './components/Pagination/Pagination.svelte';
 import Radio from './components/Radio/Radio.svelte';
@@ -21,6 +22,7 @@ export {
 	Checkbox,
 	DatePicker,
 	Dialog,
+	Divider,
 	Loading,
 	Pagination,
 	Radio,
