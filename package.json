@@ -1,6 +1,6 @@
 {
 	"name": "plantir-uikit",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -49,6 +49,11 @@
 		"vite-plugin-svelte-purgecss": "^0.2.7",
 		"vitest": "^1.2.0"
 	},
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
