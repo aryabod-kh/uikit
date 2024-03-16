@@ -4,8 +4,6 @@
 	import { ClassMerge } from '$lib/utils/ClassMerge.js';
 	type $$Props = Table;
 	let componentName = 'table';
-	export let label: string | undefined = undefined;
-	export let value: string = '';
 	export let disabled: boolean = false;
 	export let zebra: boolean = false;
 	export let hover: boolean = false;

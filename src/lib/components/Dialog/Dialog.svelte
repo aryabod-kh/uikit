@@ -32,5 +32,5 @@
 			<slot name="close">✕</slot>
 		</Button>
 	</div>
-	<div on:click={close} class={backdropClass}></div>
+	<div role="button" tabindex="0" on:keypress={close} on:click={close} class={backdropClass}></div>
 </dialog>

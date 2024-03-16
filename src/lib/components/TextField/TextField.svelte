@@ -7,10 +7,8 @@
 	} from './TextField.type.js';
 	import './TextField.scss';
 	import { ClassMerge } from '$lib/utils/ClassMerge.js';
-	import type { HTMLInputTypeAttribute } from 'svelte/elements';
 	type $$Props = TextField;
 	let componentName = 'text-field';
-	export let node: any = undefined;
 	export let label: string | undefined = undefined;
 	export let placeholder: string | undefined = undefined;
 	export let value: string = '';
