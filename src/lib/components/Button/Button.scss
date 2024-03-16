@@ -8,7 +8,9 @@
 	&-wide {
 		@apply daisy-btn-wide;
 	}
-
+	&-disabled {
+		@apply daisy-btn-disabled;
+	}
 	&-primary {
 		@apply daisy-btn-primary;
 	}
@@ -127,8 +129,5 @@
 	}
 	&-lg {
 		@apply daisy-btn-lg;
-	}
-	&-primary {
-		@apply daisy-btn-primary;
 	}
 }
