@@ -54,6 +54,13 @@
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
 	],
+	"exports": {
+		".": {
+			"svelte": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./components/*": "./dist/components/*"
+	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
