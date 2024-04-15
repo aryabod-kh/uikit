@@ -1,0 +1,5 @@
+{
+    "examples": {
+        "simple": "<script>\nimport somthing from 'plantir/blabla';\n</script>"
+    }
+}
