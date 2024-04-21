@@ -4,3 +4,4 @@
 
 <Button color="primary">Test</Button>
 <Button href="https://google.com" color="primary">Test</Button>
+<Button href="https://google.com" disabled color="primary">Test</Button>
