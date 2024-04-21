@@ -6,8 +6,14 @@
 	import Tabs from '$lib/components/Components/Tabs/Tabs.svelte';
 	import SimpleCode from '$lib/components/Components/ComponentCode/SimpleCode.svelte';
 	import { importDocumentSrc } from '../../../../../store/index.js';
-	import { onMount } from 'svelte';
 	let activeTab = 0;
+	let loading_button = false;
+	function click() {
+		loading_button = true;
+		setTimeout(() => {
+			loading_button = false;
+		}, 2000);
+	}
 </script>
 
 <Tabs tabs={['JAVASCRIPT', 'HTML', 'View']} bind:active={activeTab}>
@@ -16,22 +22,23 @@
 			<pre>
             <ScriptCode>
                 import Button from '{$importDocumentSrc}/Button.svelte';
+				let loading_button = false;
+				function click(){'{'}
+				loading_button = true;
+				setTimeout(() => {'{'}
+					loading_button = false;
+				{'}'}, 2000);
+				{'}'}
             </ScriptCode>
         </pre>
 		</ShowCode>
 	{:else if activeTab == 1}
 		<ShowCode language="svelte">
-			<TagCode name="Button" props={['variant="glass"']}>glass</TagCode><br />
-			<TagCode name="Button" props={['variant="ghost"']}>ghost</TagCode><br />
-			<TagCode name="Button" props={['variant="link"']}>link</TagCode><br />
-			<TagCode name="Button" props={['variant="outline"']}>outline</TagCode>
+			<TagCode name="Button" props={['loading={loading_button}', 'on:click={click}']}>click me</TagCode><br />
 		</ShowCode>
 	{:else}
 		<SimpleCode>
-			<Button variant="glass">glass</Button>
-			<Button variant="ghost">ghost</Button>
-			<Button variant="link">link</Button>
-			<Button variant="outline">outline</Button>
+			<Button loading={loading_button} on:click={click}>click me</Button>
 		</SimpleCode>
 	{/if}
 </Tabs>

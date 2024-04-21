@@ -21,10 +21,10 @@
 		</ShowCode>
 	{:else if activeTab == 1}
 		<ShowCode language="svelte">
-			<TagCode name="Button" props={['size:lg']}>lg</TagCode><br/>
-			<TagCode name="Button" props={['size:md']}>md</TagCode><br/>
-			<TagCode name="Button" props={['size:sm']}>sm</TagCode><br/>
-			<TagCode name="Button" props={['size:xs']}>xs</TagCode>
+			<TagCode name="Button" props={['size="lg"']}>lg</TagCode><br/>
+			<TagCode name="Button" props={['size="md"']}>md</TagCode><br/>
+			<TagCode name="Button" props={['size="sm"']}>sm</TagCode><br/>
+			<TagCode name="Button" props={['size="xs"']}>xs</TagCode>
 		</ShowCode>
 	{:else}
 		<SimpleCode>

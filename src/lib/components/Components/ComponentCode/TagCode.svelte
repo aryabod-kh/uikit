@@ -3,8 +3,7 @@
 	export let props: any = [];
 
 	function propAttr(prop: any) {
-		const string = prop.split(':');
-		console.log(string, 'biya ino bebin');
+		const string = prop.split('=');
 		return string;
 	}
 </script>
@@ -14,7 +13,7 @@
 	{#each props as prop, index}
 		{@const propValues = propAttr(prop)}
 		<span>
-			<span class="text-red-600">{propValues[0]}</span>{#if propValues[1]}="<span class="text-blue-600">{propValues[1]}</span>"{/if}
+			<span class="text-red-600">{propValues[0]}</span>{#if propValues[1]}=<span class="text-blue-600">{propValues[1]}</span>{/if}
 		</span>
 		{#if index < props.length - 1}
 			<span></span>

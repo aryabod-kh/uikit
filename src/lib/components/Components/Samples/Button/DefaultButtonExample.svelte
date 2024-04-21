@@ -21,13 +21,13 @@
 		</ShowCode>
 	{:else if activeTab == 1}
 		<ShowCode language="svelte">
-			<TagCode name="Button" props={['color:primary']}>primary</TagCode><br />
-			<TagCode name="Button" props={['color:secondary']}>secondary</TagCode><br />
-			<TagCode name="Button" props={['color:accent']}>accent</TagCode><br />
-			<TagCode name="Button" props={['color:error']}>error</TagCode><br />
-			<TagCode name="Button" props={['color:info']}>info</TagCode><br />
-			<TagCode name="Button" props={['color:success']}>success</TagCode><br />
-			<TagCode name="Button" props={['color:warning']}>warning</TagCode><br />
+			<TagCode name="Button" props={['color="primary"']}>primary</TagCode><br />
+			<TagCode name="Button" props={['color="secondary"']}>secondary</TagCode><br />
+			<TagCode name="Button" props={['color="accent"']}>accent</TagCode><br />
+			<TagCode name="Button" props={['color="error"']}>error</TagCode><br />
+			<TagCode name="Button" props={['color="info"']}>info</TagCode><br />
+			<TagCode name="Button" props={['color="success"']}>success</TagCode><br />
+			<TagCode name="Button" props={['color="warning"']}>warning</TagCode><br />
 			<TagCode name="Button">default</TagCode>
 		</ShowCode>
 	{:else}

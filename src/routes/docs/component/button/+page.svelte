@@ -7,6 +7,11 @@
 	import ShapeButtonExample from '$lib/components/Components/Samples/Button/ShapeButtonExample.svelte';
 	import LinkButtonExample from '$lib/components/Components/Samples/Button/LinkButtonExample.svelte';
 	import DisabledButtonExample from '$lib/components/Components/Samples/Button/DisabledButtonExample.svelte';
+	import LoadingButtonExample from '$lib/components/Components/Samples/Button/LoadingButtonExample.svelte';
+	import WideButtonExample from '$lib/components/Components/Samples/Button/WideButtonExample.svelte';
+	import ActiveButtonExample from '$lib/components/Components/Samples/Button/ActiveButtonExample.svelte';
+	import BlockButtonExample from '$lib/components/Components/Samples/Button/BlockButtonExample.svelte';
+	import ListOfProps from '$lib/components/Components/Samples/Button/ListOfProps.svelte';
 </script>
 
 <div class="component-wrapper">
@@ -68,4 +73,33 @@
 		<span class="badge">button</span>.
 	</p>
 	<DisabledButtonExample />
+	<Title id="button-loading" title="Button Loading" />
+	<p>
+		Use <span class="badge">loading</span> prop to change button to a loading
+		<span class="badge">button</span>. loading also change button to disabled mode and user can't
+		click any more on the button while button is on loading section. you can bind a variable to
+		loading to customize your loading.
+	</p>
+	<LoadingButtonExample />
+	<Title id="button-wide" title="Button Wide" />
+	<p>
+		Use <span class="badge">wide</span> prop to change button to a wide
+		<span class="badge">button</span>.
+	</p>
+	<WideButtonExample />
+	<Title id="button-active" title="Button Active" />
+	<p>
+		Use <span class="badge">active</span> prop to change button to a wide
+		<span class="badge">button</span>.
+	</p>
+	<ActiveButtonExample />
+	<Title id="button-block" title="Button Block" />
+	<p>
+		Use <span class="badge">block</span> prop to change button to a block
+		<span class="badge">button</span>.
+	</p>
+	<BlockButtonExample />
+	<Title id="button-props" title="Props" />
+	<p>this is the list of the props that button can have.</p>
+	<ListOfProps />
 </div>

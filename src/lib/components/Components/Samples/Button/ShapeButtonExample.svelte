@@ -20,8 +20,8 @@
 		</ShowCode>
 	{:else if activeTab == 1}
 		<ShowCode language="svelte">
-			<TagCode name="Button" props={['shape:circle']}>circle</TagCode><br/>
-			<TagCode name="Button" props={['shape:square']}>square</TagCode>
+			<TagCode name="Button" props={['shape="circle"']}>circle</TagCode><br/>
+			<TagCode name="Button" props={['shape="square"']}>square</TagCode>
 		</ShowCode>
 	{:else}
 		<SimpleCode>
