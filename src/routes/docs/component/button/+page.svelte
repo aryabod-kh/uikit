@@ -6,6 +6,7 @@
 	import VariantButtonExample from '$lib/components/Components/Samples/Button/VariantButtonExample.svelte';
 	import ShapeButtonExample from '$lib/components/Components/Samples/Button/ShapeButtonExample.svelte';
 	import LinkButtonExample from '$lib/components/Components/Samples/Button/LinkButtonExample.svelte';
+	import DisabledButtonExample from '$lib/components/Components/Samples/Button/DisabledButtonExample.svelte';
 </script>
 
 <div class="component-wrapper">
@@ -61,10 +62,10 @@
 		<span class="badge">link</span>.
 	</p>
 	<LinkButtonExample />
-	<Title id="button-link" title="Button Link" />
+	<Title id="button-disabled" title="Button Disable" />
 	<p>
-		Use <span class="badge">href</span> prop to change button to a
-		<span class="badge">link</span>.
+		Use <span class="badge">disabled</span> prop to change button to a disable
+		<span class="badge">button</span>.
 	</p>
-	<LinkButtonExample />
+	<DisabledButtonExample />
 </div>
