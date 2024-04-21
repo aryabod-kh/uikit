@@ -1,6 +1,11 @@
 <script lang="ts">
-	import Title from "$lib/components/Components/Doc/Title.svelte";
-	import ButtonSimpleExample from "$lib/components/Components/Samples/Button/SimpleExample.svelte";
+	import Title from '$lib/components/Components/Doc/Title.svelte';
+	import DefaultButtonExample from '$lib/components/Components/Samples/Button/DefaultButtonExample.svelte';
+	import ButtonSimpleExample from '$lib/components/Components/Samples/Button/SimpleExample.svelte';
+	import SizeButtonExample from '$lib/components/Components/Samples/Button/SizeButtonExample.svelte';
+	import VariantButtonExample from '$lib/components/Components/Samples/Button/VariantButtonExample.svelte';
+	import ShapeButtonExample from '$lib/components/Components/Samples/Button/ShapeButtonExample.svelte';
+	import LinkButtonExample from '$lib/components/Components/Samples/Button/LinkButtonExample.svelte';
 </script>
 
 <div class="component-wrapper">
@@ -28,12 +33,38 @@
 		is set to <span class="badge">button</span>. You can change it by using the
 		<span class="badge"> color </span> prop.
 	</p>
-	<ButtonSimpleExample />
+	<DefaultButtonExample />
 	<Title id="button-variant" title="Button Variant" />
 	<p>
 		Use these <span class="badge">variant</span> prop to change type of a
 		<span class="badge">button</span>. there is no default option for variant, but you can pass
 		these values to the <span class="badge">variant</span> prop.
 	</p>
-	<ButtonSimpleExample />
+	<VariantButtonExample />
+	<Title id="button-size" title="Button Size" />
+	<p>
+		Use <span class="badge">size</span> prop to change size of a
+		<span class="badge">button</span>. default size option for size is
+		<span class="badge">md</span>.
+	</p>
+	<SizeButtonExample />
+	<Title id="button-shape" title="Button Shape" />
+	<p>
+		Use <span class="badge">shape</span> prop to change shape of a
+		<span class="badge">button</span>. there is no default option for shape, but you can pass these
+		values to the <span class="badge">shape</span> prop.
+	</p>
+	<ShapeButtonExample />
+	<Title id="button-link" title="Button Link" />
+	<p>
+		Use <span class="badge">href</span> prop to change button to a
+		<span class="badge">link</span>.
+	</p>
+	<LinkButtonExample />
+	<Title id="button-link" title="Button Link" />
+	<p>
+		Use <span class="badge">href</span> prop to change button to a
+		<span class="badge">link</span>.
+	</p>
+	<LinkButtonExample />
 </div>

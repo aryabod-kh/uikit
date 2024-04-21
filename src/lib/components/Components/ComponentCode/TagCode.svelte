@@ -14,7 +14,7 @@
 	{#each props as prop, index}
 		{@const propValues = propAttr(prop)}
 		<span>
-			{propValues[0]}{#if propValues[1]}="{propValues[1]}"{/if}
+			<span class="text-red-600">{propValues[0]}</span>{#if propValues[1]}="<span class="text-blue-600">{propValues[1]}</span>"{/if}
 		</span>
 		{#if index < props.length - 1}
 			<span></span>

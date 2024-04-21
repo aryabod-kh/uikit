@@ -6,6 +6,7 @@
 	import Tabs from '$lib/components/Components/Tabs/Tabs.svelte';
 	import SimpleCode from '$lib/components/Components/ComponentCode/SimpleCode.svelte';
 	import { importDocumentSrc } from '../../../../../store/index.js';
+	import { onMount } from 'svelte';
 	let activeTab = 0;
 </script>
 
@@ -20,11 +21,17 @@
 		</ShowCode>
 	{:else if activeTab == 1}
 		<ShowCode language="svelte">
-			<TagCode name="Button">Test</TagCode>
+			<TagCode name="Button" props={['size:lg']}>lg</TagCode><br/>
+			<TagCode name="Button" props={['size:md']}>md</TagCode><br/>
+			<TagCode name="Button" props={['size:sm']}>sm</TagCode><br/>
+			<TagCode name="Button" props={['size:xs']}>xs</TagCode>
 		</ShowCode>
 	{:else}
 		<SimpleCode>
-			<Button>Test</Button>
+			<Button size="lg">lg</Button>
+			<Button size="md">md</Button>
+			<Button size="sm">sm</Button>
+			<Button size="xs">xs</Button>
 		</SimpleCode>
 	{/if}
 </Tabs>

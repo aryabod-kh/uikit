@@ -6,6 +6,7 @@
 	import Tabs from '$lib/components/Components/Tabs/Tabs.svelte';
 	import SimpleCode from '$lib/components/Components/ComponentCode/SimpleCode.svelte';
 	import { importDocumentSrc } from '../../../../../store/index.js';
+	import { onMount } from 'svelte';
 	let activeTab = 0;
 </script>
 
@@ -20,11 +21,25 @@
 		</ShowCode>
 	{:else if activeTab == 1}
 		<ShowCode language="svelte">
-			<TagCode name="Button">Test</TagCode>
+			<TagCode name="Button" props={['color:primary']}>primary</TagCode><br />
+			<TagCode name="Button" props={['color:secondary']}>secondary</TagCode><br />
+			<TagCode name="Button" props={['color:accent']}>accent</TagCode><br />
+			<TagCode name="Button" props={['color:error']}>error</TagCode><br />
+			<TagCode name="Button" props={['color:info']}>info</TagCode><br />
+			<TagCode name="Button" props={['color:success']}>success</TagCode><br />
+			<TagCode name="Button" props={['color:warning']}>warning</TagCode><br />
+			<TagCode name="Button">default</TagCode>
 		</ShowCode>
 	{:else}
 		<SimpleCode>
-			<Button>Test</Button>
+			<Button color="primary">primary</Button>
+			<Button color="secondary">secondary</Button>
+			<Button color="accent">accent</Button>
+			<Button color="error">error</Button>
+			<Button color="info">info</Button>
+			<Button color="success">success</Button>
+			<Button color="warning">warning</Button>
+			<Button>default</Button>
 		</SimpleCode>
 	{/if}
 </Tabs>

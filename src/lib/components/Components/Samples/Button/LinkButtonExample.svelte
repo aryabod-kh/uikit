@@ -20,11 +20,13 @@
 		</ShowCode>
 	{:else if activeTab == 1}
 		<ShowCode language="svelte">
-			<TagCode name="Button">Test</TagCode>
+			<TagCode name="Button" props={['href:/home']}>goto home</TagCode><br/>
+			<TagCode name="Button" props={['href:google.com']}>google</TagCode>
 		</ShowCode>
 	{:else}
 		<SimpleCode>
-			<Button>Test</Button>
+			<Button href="/home">goto home</Button>
+			<Button href="google.com">google</Button>
 		</SimpleCode>
 	{/if}
 </Tabs>
