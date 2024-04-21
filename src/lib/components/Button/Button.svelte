@@ -50,7 +50,7 @@
 
 <El
 	tag={href ? 'a' : 'button'}
-	href={href ? href : ''}
+	href={href ? href : undefined}
 	{componentName}
 	{componentClass}
 	{...$$restProps}
