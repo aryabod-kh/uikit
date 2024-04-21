@@ -17,10 +17,6 @@
 	export let componentName: string = 'El';
 	export let componentClass: object = {};
 	export let tag: string = $$restProps.href ? 'a' : 'div';
-	export let rounded: boolean = false;
-	export let border: boolean = false;
-	export let shadow: boolean = false;
-
 	export let node: HTMLElement | undefined = undefined;
 	// Action function and its params
 	export let use: Action<HTMLElement, any> = noop;

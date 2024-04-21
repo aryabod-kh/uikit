@@ -1,8 +1,59 @@
 @import '../../scss/var.scss';
 
-.#{$prefix}button {
-	@apply daisy-btn;
-	&-block {
+.#{$prefix}tabs {
+	@apply daisy-tabs;
+
+	&-bordered {
+		@apply daisy-tabs-bordered;
+		.#{$prefix}tab-item {
+			border-color: var(--fallback-bc, oklch(var(--bc) / var(--tw-border-opacity)));
+			--tw-border-opacity: 0.2;
+			border-bottom-width: calc(var(--tab-border, 1px) + 1px);
+			border-style: solid;
+			&-active {
+				border-color: var(--fallback-bc, oklch(var(--bc) / var(--tw-border-opacity)));
+				--tw-border-opacity: 1;
+				--tw-text-opacity: 1;
+			}
+		}
+	}
+	&-lifted {
+		@apply daisy-tabs-lifted;
+		.#{$prefix}tab-item {
+			border: var(--tab-border, 1px) solid transparent;
+			border-bottom-color: var(--tab-border-color);
+			border-start-end-radius: var(--tab-radius, 0.5rem);
+			border-start-start-radius: var(--tab-radius, 0.5rem);
+			border-width: 0 0 var(--tab-border, 1px) 0;
+			padding-inline-end: var(--tab-padding, 1rem);
+			padding-inline-start: var(--tab-padding, 1rem);
+			padding-top: var(--tab-border, 1px);
+			&-active {
+				background-color: var(--tab-bg);
+				border-inline-end-color: var(--tab-border-color);
+				border-inline-start-color: var(--tab-border-color);
+				border-top-color: var(--tab-border-color);
+				border-width: var(--tab-border, 1px) var(--tab-border, 1px) 0 var(--tab-border, 1px);
+				padding-inline-end: calc(var(--tab-padding, 1rem) - var(--tab-border, 1px));
+				padding-bottom: var(--tab-border, 1px);
+				padding-inline-start: calc(var(--tab-padding, 1rem) - var(--tab-border, 1px));
+				padding-top: 0;
+			}
+		}
+	}
+	&-boxed {
+		@apply daisy-tabs-boxed;
+		.#{$prefix}tab-item {
+			border-radius: var(--rounded-btn, 0.5rem);
+			&-active {
+				--tw-bg-opacity: 1;
+				background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity)));
+				--tw-text-opacity: 1;
+				color: var(--fallback-pc, oklch(var(--pc) / var(--tw-text-opacity)));
+			}
+		}
+	}
+	/* &-block {
 		@apply daisy-btn-block;
 	}
 	&-wide {
@@ -129,5 +180,5 @@
 	}
 	&-lg {
 		@apply daisy-btn-lg;
-	}
+	} */
 }

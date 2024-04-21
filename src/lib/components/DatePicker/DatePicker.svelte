@@ -26,19 +26,19 @@
 			fp.setDate(value, true, dateFormat);
 		}
 	}
-	export let input = undefined;
-	export let fp = undefined;
+	export let input: any = undefined;
+	export let fp: any = undefined;
 	export let value: string | undefined = undefined;
 	export let formattedValue: string = '';
 	export let element: any = undefined;
 	export let dateFormat: string | undefined = undefined;
 	export let options = {};
-	export let label: string | undefined = undefined;
-	export let placeholder: string | undefined = undefined;
-	export let disabled: boolean = false;
-	export let bordered: boolean = true;
-	export let size: DatePickerSize = undefined;
-	export let color: DatePickerColor = undefined;
+	// export let label: string | undefined = undefined;
+	export let placeholder: string | undefined = 'Select Date';
+	// export let disabled: boolean = false;
+	// export let bordered: boolean = true;
+	// export let size: DatePickerSize = undefined;
+	// export let color: DatePickerColor = undefined;
 	onMount(() => {
 		const elem = element ?? input;
 
@@ -136,5 +136,5 @@
 </script>
 
 <slot>
-	<input class={inputClass} placeholder="Select Date" bind:this={input} {...$$restProps} />
+	<input class={inputClass} {placeholder} bind:this={input} {...$$restProps} />
 </slot>
