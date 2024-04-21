@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from '@plantir/uikit/index.js';
+	import { Button } from '$lib/index.js';
 	import hljs from 'highlight.js';
 	import 'highlight.js/styles/github.css';
 	import { onMount } from 'svelte';

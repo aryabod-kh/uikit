@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Title from "$lib/components/Components/Doc/Title.svelte";
 	import ButtonSimpleExample from "$lib/components/Components/Samples/Button/SimpleExample.svelte";
+
+
 </script>
 
 <div class="component-wrapper">

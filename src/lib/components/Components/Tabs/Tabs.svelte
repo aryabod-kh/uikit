@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from '@plantir/uikit/index.js';
+	import { Button } from '$lib/index.js';
 
 	export let tabs: any;
 	export let active = 0;

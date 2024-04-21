@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Button from '@plantir/uikit/components/Button/Button.svelte';
-	import ScriptCode from '@plantir/uikit/components/Components/ComponentCode/ScriptCode.svelte';
-	import ShowCode from '@plantir/uikit/components/Components/ComponentCode/ShowCode.svelte';
-	import TagCode from '@plantir/uikit/components/Components/ComponentCode/TagCode.svelte';
-	import Tabs from '@plantir/uikit/components/Components/Tabs/Tabs.svelte';
-	import SimpleCode from '@plantir/uikit/components/Components/ComponentCode/SimpleCode.svelte';
+	import Button from '$lib/components/Button/Button.svelte';
+	import ScriptCode from '$lib/components/Components/ComponentCode/ScriptCode.svelte';
+	import ShowCode from '$lib/components/Components/ComponentCode/ShowCode.svelte';
+	import TagCode from '$lib/components/Components/ComponentCode/TagCode.svelte';
+	import Tabs from '$lib/components/Components/Tabs/Tabs.svelte';
+	import SimpleCode from '$lib/components/Components/ComponentCode/SimpleCode.svelte';
 	let activeTab = 0;
 </script>
 
@@ -13,7 +13,7 @@
 		<ShowCode language="javascript">
 			<pre>
             <ScriptCode>
-                import Button from '@plantir/uikit/components/Button/Button.svelte';
+                import Button from '$lib/components/Button/Button.svelte';
             </ScriptCode>
         </pre>
 		</ShowCode>
