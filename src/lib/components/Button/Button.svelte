@@ -48,7 +48,14 @@
 	};
 </script>
 
-<El tag={href ? 'a' : 'button'} {componentName} {componentClass} {...$$restProps} on:click>
+<El
+	tag={href ? 'a' : 'button'}
+	href={href ? href : ''}
+	{componentName}
+	{componentClass}
+	{...$$restProps}
+	on:click
+>
 	{#if loading}
 		<slot name="loader">
 			<Loading size="xs" />
