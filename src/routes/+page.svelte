@@ -1,20 +1,25 @@
 <script>
-	import DatePicker from '@plantir/uikit/components/DatePicker/DatePicker.svelte';
-	import TextField from '@plantir/uikit/components/TextField/TextField.svelte';
-	let value = '2024-02-28';
-	let formattedValue = '';
+	import Checkbox from '$lib/components/Checkbox/Checkbox.svelte';
 </script>
 
-<!-- <DatePicker bind:value bind:formattedValue /> -->
-<div class="border-b">
-	<div class="h-16 container mx-auto flex items-center justify-between gap-3">
-		<div class="flex items-center gap-2">
-			<img src="/logo.jpg" class="w-8 h-8 rounded-full" alt="" />
-			UiKit
-		</div>
-		<div>
-			<TextField placeholder="search" size="sm" />
-		</div>
-		<div>khodafez</div>
-	</div>
+<Checkbox label="Apply to all" />
+
+<div>
+	<Checkbox color="primary" label="primary" />
+	<Checkbox color="secondary" label="secondary" />
+	<Checkbox color="accent" label="accent" />
+	<Checkbox color="success" label="success" />
+	<Checkbox color="warning" label="warning" />
+	<Checkbox color="info" label="info" />
+	<Checkbox color="error" label="error" />
+	<Checkbox disabled color="error" label="disabled" />
+</div>
+<div>
+	<Checkbox size="xs" label="xs" />
+	<Checkbox size="sm" label="sm" />
+	<Checkbox size="md" label="md" />
+	<Checkbox size="lg" label="lg" />
+</div>
+<div>
+	<Checkbox indeterminate label="Indeterminate" />
 </div>

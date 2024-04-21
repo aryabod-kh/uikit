@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Select, SelectColor, SelectSize } from './Select.type.ts';
 	import './Select.scss';
-	import { ClassMerge } from '@plantir/uikit/utils/ClassMerge.js';
+	import { ClassMerge } from '$lib/utils/ClassMerge.js';
 	type $$Props = Select;
 	let componentName = 'select';
 	export let label: string | undefined = undefined;
@@ -40,7 +40,7 @@
 	$: elClass = ClassMerge({ name: componentName, componentClass, staticClassess: $$props.class });
 </script>
 
-<select bind:value class={elClass}>
+<select bind:value class={elClass} on:change>
 	<option disabled selected value="">{label}</option>
 	{#each convertedItems as { value, title }}
 		<option {value}>{title}</option>
